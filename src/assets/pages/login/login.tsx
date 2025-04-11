@@ -1,5 +1,4 @@
 import React from 'react';
-import './login.css';
 import { Button, Container} from '@mui/material';
 import TextInput from '../../components/InputComponent/InputComponent';
 
@@ -14,7 +13,6 @@ const LoginPage = () =>{
             alert('Login: admin\n' + 'Senha:admin\n')
         }
     }
-
 
     return(
         <Container className='container' style={{display:'flex', flexDirection:'column', alignContent:'center', width:580, height:456, backgroundColor:'#ffffffff', borderRadius:'20px', boxSizing:'border-box'}}>

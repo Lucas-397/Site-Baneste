@@ -1,29 +1,12 @@
-interface Cliente {
+export interface Agencia {
     id: string;
-    cpfCnpj: string;
-    rg?: string;
-    dataNascimento: Date;
+    codigo: number;
     nome: string;
-    nomeSocial?: string;
-    email: string;
     endereco: string;
-    rendaAnual: number;
-    patrimonio: number;
-    estadoCivil: 'Solteiro' | 'Casado' | 'Viúvo' | 'Divorciado';
-    codigoAgencia: number;
 }
-
-
-const cliente: Cliente = {
+export const agenciaTeste:Agencia = {
     id: '1',
-    cpfCnpj: '193.264.067-33',
-    rg: '4.507.672',
-    dataNascimento: new Date('2024/04/10'),
-    nome: 'Lucas Machado',
-    email: 'lucas.machado@email',
-    endereco: 'Rua. Padre Pires Carneiro',
-    rendaAnual: 30000,
-    patrimonio: 15000,
-    estadoCivil: 'Solteiro',
-    codigoAgencia: 21,
+    codigo: 21,
+    nome: 'Banco Brasil- Mata da Praia',
+    endereco: 'R. Mata da praia',
 }
